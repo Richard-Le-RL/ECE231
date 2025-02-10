@@ -5,17 +5,17 @@ Date Author Revision
 ***************************************************/
 #include <stdio.h>
 void message(int message_number) {
-switch (message_number) {
-case 1:
-printf("Hello World\n");
-break;
-case 2:
-printf("Goodbye World\n");
-break;
-default:
-printf("unknown message\n");
-break;
-}
+    switch (message_number) {
+        case 1:
+        printf("Hello World\n");
+        break;
+        case 2:
+        printf("Goodbye World\n");
+        break;
+        default:
+        printf("unknown message\n");
+        break;
+    }
 }
 int main() {
     int x = 2;
