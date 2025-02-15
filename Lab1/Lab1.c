@@ -12,7 +12,7 @@ void mean_and_timestamp(int buffer[],double *mean,struct timespec *timestamp) {
     clock_gettime(CLOCK_MONOTONIC,timestamp);
 }
 int main() {
-    float mean; // we can make the mean an int later 
+    double mean; // we can make the mean an int later 
     int buffer[10]; // an array of 10 integers
     struct timespec timestamp; // struct stores related variables
 
@@ -27,7 +27,7 @@ int main() {
 
             if (x != 1) {
                 printf("Invalid input, please input a number (0-9000)\n");
-                while (getchar() != '\n'); // Discard invalid input
+                while (getchar() != '\n'); // discard the invalid input
                 continue;
             }
 
