@@ -13,7 +13,7 @@ void mean_and_timestamp(int buffer[],double *mean,struct timespec *timestamp) { 
 
 int main() {
     double mean; 
-    int buffer[10]; 
+    int buffer[10];  
     struct timespec timestamp; 
 
     int round = 0; 
